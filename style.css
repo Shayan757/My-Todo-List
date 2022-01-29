@@ -1,72 +1,122 @@
 .container{
-    text-align: center;
-    margin-top: 25px;
-    left: 50%;
-    top: 50%;
-  
+  text-align: center;
+  margin-top: 25px;
+  left: 50%;
+  top: 50%;
+
 }
+
 #my-form{
 padding: 2rem;
 margin: 0px;
 }
 
+h1{
+font-style: none;
+padding: 0px;
+font-size: 3em;
+display: block;
+color: white;
 
-button{
-        padding: 7px 14px;
-        background-color:  #d3d3d2;
-        border: none;
-        border-radius: 4px;
-        color: rgb(0, 119, 255);    
 
-  }
-
-button:hover{
-  background-color:thistle;
 }
 
-  h1{
-    font-style: none;
-    padding: 0px;
-    font-size: 3em;
-    display: block;
-    color: white;
+
+.todo-button{
+      padding: 7px 14px;
+      /* background-color:  #d3d3d2; */
+      background:  darkgray;
+      border: none;
+      border-radius: 4px;
+      color: rgb(0, 119, 255);    
+}
+
+.todo-button:hover{
+
+background-color:thistle;
+}
 
 
-  }
 
-#my-form input[type='text'] {
-    width: 47%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+.todo-input[type='text'] {
+  width: 47%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-  body{
+body{
 
-    background-color: #00b0ff;
+  background-color: #00b0ff;
 
-  }
+}
+ 
+.todo-list {
+  min-width: 70%;
+  list-style: none;
+  margin-top: 6rem;
+} 
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  ol{
-      padding: 10px;
 
-    }  
+.todo li {
+  flex: 1;
+}
 
- ol li{
-    list-style: none;
-    padding: 5px;
-    background-color:white;
-    margin: 8px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,.16);
-    border-radius: 3px;
-    width: 50%;
-    margin-left: 22%;
-  
-  
-  }
 
-ol li:hover{
-  background-color:thistle;
+.todo{
+  list-style: none;
+  padding: 5px;
+  background-color:white;
+  margin: 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.16);
+  border-radius: 3px;
+  width: 50%;
+  margin-left: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+
+
+
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
+background: #ff6f47;
+color: white;
+border: none;
+padding: 0.5rem;
+cursor: pointer;
+font-size: 1rem;
+}
+.complete-btn {
+
+background:  #00b0ff;
+}
+
+.fa-trash,
+.fa-check {
+pointer-events: none;
+}
+
+.completed {
+text-decoration:line-through;
+opacity: 0.5;
+}
+
+.fall {
+transform: translateY(8rem) rotateZ(20deg);
+opacity: 0;
 }
   
