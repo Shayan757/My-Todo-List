@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-List</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class ="container">
-        <form id="my-form">
+    <div class="container">
+        <form class="my-form">
             <h1>To-Do List</h1>
             <div>
-                <input type="text" id="myinput" placeholder="what you want to do?">
-                <button id="btn">Add</button>                
+                <input type="text" class="todo-input" placeholder="what you want to do?">
+                <button class="todo-button" type="add">Add</button>                
             </div>
+
               
         </form>
+
     </div>
 
-    <ol id="users"></ol>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
 
-    <ol>
-        <li>Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-    </ol>
-     
+    </div>
+    
+        
 
      
 </body>
+<script src="app.js" defer></script>
 </html>
